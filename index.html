@@ -15,91 +15,121 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
+          <div class="navbar-nav px-5">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">Transações</a>
             <a class="nav-link" href="#">Conta</a>
           </div>
-          <div class="SmartCash">
-            <a class="nav-link text-dark-" href="#">SmartCash</a>
+          <div class="SmartCash position-absolute end-0 px-5">
+            <a class="nav-link smart-cash" href="#">SmartCash</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
+
   <main class="my-5 text-center">
     <div class="visaoGeral">
-      <h1>R$ 1091,36</h1>
-      <p>Atualizado em 29/04/2025</p>
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <p class="text-success">Receita</p>
+      <div class="ms-5 d-flex justify-content-center">
+        <h1 class="saldoAtual">R$ 1091,36</h1>
+        <img src="imagens/eye.svg" alt="icone-olho" class="mb-5 ms-3">
+      </div>
+      <p class="avisoAtualizacao">Atualizado em 29/04/2025</p>
+      <div class="container my-4">
+        <div class="row d-flex justify-content-center">
+          <div class="col-2">
+            <p class="receitaText">Receita</p>
             <p>R$ 1958</p>
           </div>
-          <div class="col-6">
-            <p class="text-danger">Receita</p>
+          <div class="col-2">
+            <p class="text-danger">Despesas</p>
             <p>R$ 866,64</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="mensagemBot bg-secondary">
-      <img src="" alt="">
+    <div class="mensagemBot">
+      <img src="imagens/robot.svg" alt="" class="robot-img">
       <p>Percebi que seus gastos com delivery aumentaram 32% este mês. Que tal definir um limite semanal ou cozinhar em
         casa dois dias a mais? Sua carteira agradece</p>
     </div>
 
     <div class="transacoes">
-      <h2 class="historico">Histórico</h2>
-      <h2 class="tudo">Ver tudo</h2>
-      <div class="transacao1">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+      <div class="historicoTransacoes">
+        <h2 class="historico fs-5 fw-bold">Histórico</h2>
+        <h2 class="tudo fs-5 fw-bold">Ver tudo</h2>
       </div>
-      <div class="transacao2">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/restaurant.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Restaurante do Mané</p>
+        </div>
+        <p class="valorTransacao text-danger fw-bold">- R$ 57,90</p>
       </div>
-      <div class="transacao3">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/cart.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Supermercado</p>
+        </div>
+        <p class="valorTransacao text-danger fw-bold">- R$ 509,50</p>
       </div>
-      <div class="transacao4">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/cash.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Divida do Roberto</p>
+        </div>
+        <p class="valorTransacao text-primary fw-bold">R$ 426</p>
       </div>
-      <div class="transacao5">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/cart.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Fone de ouvido</p>
+        </div>
+        <p class="valorTransacao text-danger fw-bold">- R$ 299,90</p>
       </div>
-      <div class="transacao6">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/cart.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Barraca de frutas</p>
+        </div>
+        <p class="valorTransacao text-danger fw-bold">- R$ 110</p>
       </div>
-      <div class="transacao7">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/restaurant.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Churrascaria</p>
+        </div>
+        <p class="valorTransacao text-danger fw-bold">- R$ 185</p>
       </div>
-      <div class="transacao8">
-        <img src="imagens/restaurant.svg" alt="icone restaurante">
-        <p class="nomeTransacao">Restaurante do Mané</p>
-        <p class="valorTransacao">R$ 57,90</p>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/cash.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Divida Recebida</p>
+        </div>
+        <p class="valorTransacao text-primary fw-bold">R$ 230,50</p>
+      </div>
+
+      <div class="transacao">
+        <div class="descricaoTransacao">
+          <img src="imagens/cash.svg" alt="icone restaurante" class="iconeDescricao">
+          <p class="nomeTransacao">Salário</p>
+        </div>
+        <p class="valorTransacao text-primary fw-bold">R$ 2.400</p>
       </div>
     </div>
 
