@@ -7,6 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    overflow: hidden;
+    font-size: 12px;
 }
 
 header {
@@ -46,7 +48,7 @@ img {
     background-color: #ededed;
     display: flex;
     align-items: center;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 1rem;
     gap: -5px;
     max-width: 500px;
@@ -63,6 +65,11 @@ img {
     justify-content: space-between;
     margin: auto;
     max-width: 40%;
+}
+
+.transacoes {
+    margin: auto;
+    max-width: 70%;
 }
 
 .transacao {
